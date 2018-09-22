@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest
+codecov
+coverage
+coveralls
+pytest-cov
+flake8

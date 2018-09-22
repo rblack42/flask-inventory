@@ -3,20 +3,22 @@
 .PHONY: reqs
 reqs:
 	pip install --upgrade pip
-	pip install -r requirements.txt
+	pip install -r requirements-dev.txt
 
 _venv:
 	python3 -m venv _venv
 
 .PHONY:	all
 all:
-	nosetests
+	python run.py
 
 .PHONY: test
-test:
-	nosetests --with-coverage
+test:	changes
+	flake8
+	pytest --cov=./
 
-CHANGES.rst:
-	git log --oneline --pretty=format:"* %ad: %s\n" --date=short > $@
+.PHONY: changes
+changes:
+	git log --oneline --pretty=format:"* %ad: %s\n" --date=short > CHANGES.rst
 
 
