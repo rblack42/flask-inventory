@@ -10,11 +10,11 @@ _venv:
 
 .PHONY:	all
 all:	_venv
-	nose
+	_venv/bin/nosetests
 
 .PHONY: test
-test:	_venv/bin/pytest
-	_venv/bin/pytest
+test:	_venv/bin/nosetests
+	_venv/bin/nosetests --with-coverage
 
 CHANGES.rst:
 	git log --oneline --pretty=format:"* %ad: %s\n" --date=short > $@

@@ -5,6 +5,8 @@ language: python
 python: 
   - 3.6
 
+env:
+  - CODECOV_TOKEN="361ef13d-cd38-4f9a-873d-6cfe57c3e643"
 install:
   - pip install -r requirements.txt
 
