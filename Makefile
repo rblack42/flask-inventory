@@ -9,12 +9,12 @@ _venv:
 	python3 -m venv _venv
 
 .PHONY:	all
-all:	_venv
-	_venv/bin/nosetests
+all:
+	nosetests
 
 .PHONY: test
-test:	_venv/bin/nosetests
-	_venv/bin/nosetests --with-coverage
+test:
+	nosetests --with-coverage
 
 CHANGES.rst:
 	git log --oneline --pretty=format:"* %ad: %s\n" --date=short > $@
