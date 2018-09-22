@@ -1,0 +1,7 @@
+[run]
+branch = False
+omit = _venv/*
+
+[report]
+show_missing = False
+

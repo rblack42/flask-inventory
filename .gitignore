@@ -6,7 +6,7 @@
 *.py[cod]
 __pycache__
 _venv/
-.pytest_cache
+.coverage
 
 # Mac
 .DS_Store

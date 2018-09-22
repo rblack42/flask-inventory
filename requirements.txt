@@ -1,4 +1,5 @@
 flask
-pytest
-codecov
+coverage
+python-coveralls
+nose
 

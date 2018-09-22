@@ -1,6 +1,8 @@
 Flask Inventory
 ###############
 
+..  image:: https://travis-ci.org/rblack42/flask-inventory.svg?branch=master
+
 :Author: Roie R. Black
 :Email: rblack@austincc.edu
 

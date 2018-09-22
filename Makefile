@@ -1,3 +1,5 @@
+.DEFAULT_GOAL	:= all
+
 .PHONY: reqs
 reqs:
 	pip install --upgrade pip
@@ -8,8 +10,13 @@ _venv:
 
 .PHONY:	all
 all:	_venv
-	pytest
+	nose
 
 .PHONY: test
 test:	_venv/bin/pytest
-	pytest
+	_venv/bin/pytest
+
+CHANGES.rst:
+	git log --oneline --pretty=format:"* %ad: %s\n" --date=short > $@
+
+

@@ -1,7 +1,12 @@
-# sanity test for pytest
-def func(x):
-    return x+1
+import unittest
+class TestSanity(unittest.TestCase):
 
-def test_sanity():
-    assert func(3) == 4
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def test_sanity(self):
+        self.assertEqual(1,1)
 
