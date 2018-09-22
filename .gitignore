@@ -1,0 +1,14 @@
+# Vim
+*~
+*.swp
+
+# Python
+*.py[cod]
+__pycache__
+_venv/
+.pytest_cache
+
+# Mac
+.DS_Store
+
+
