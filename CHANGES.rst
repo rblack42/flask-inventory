@@ -1,3 +1,4 @@
+* 2018-09-22: reworking test setup\n
 * 2018-09-21: added coverage badge\n
 * 2018-09-21: more coverage work\n
 * 2018-09-21: adding coverage\n

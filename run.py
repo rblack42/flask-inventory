@@ -1,3 +1,2 @@
-from app import app
-app.run()
-
+from app.core import create_app
+app = create_app('flask.cfg')

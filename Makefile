@@ -10,12 +10,12 @@ _venv:
 
 .PHONY:	all
 all:
-	python run.py
+	export FLASK_APP=run.py && flask run
 
 .PHONY: test
 test:	changes
 	flake8
-	pytest --cov=./
+	pytest --cov=./app
 
 .PHONY: changes
 changes:
