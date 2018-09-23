@@ -9,7 +9,6 @@ install:
   - pip install -r requirements-dev.txt
 
 script:
- - make
  - make test
 
 after_success:
